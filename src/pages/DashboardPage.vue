@@ -1,11 +1,12 @@
 <template>
   <div class="q-pa-lg q-py-lg">
-    <div class="text-primary" style=" margin-top: -30px">
+    <div class="text-primary" style=" margin-top: -30px;">
       <h4><strong>Dashboard</strong></h4>
+      <hr style="margin-top: -40px">
     </div>
     <div
-      class="flex row justify-between q-py-lg text-white"
-      style="margin-top: -40px"
+      class="flex row justify-between q-py-lg text-white q-gutter-y-md"
+      
     >
       <q-card class="col-xs-12 col-sm-8 col-md-3 q-pa-lg">
         <q-card-section class="text-center text-black">
@@ -39,7 +40,7 @@
     </div>
 
     <div
-      class="flex row justify-between q-py-lg"
+      class="flex row justify-between q-gutter-y-md"
       
     >
       <q-card class="col-xs-12 col-sm-8 col-md-8 q-pa-lg">
@@ -120,7 +121,7 @@ export default DashboardPage;
 </script>
 <style scoped>
 .q-card {
-  border: 1px solid #219ebc;
+ 
   height: 200px;
 }
 .dash {

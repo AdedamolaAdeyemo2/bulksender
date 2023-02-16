@@ -29,16 +29,18 @@
           class="q-gutter-sm row items-center text-primary no-wrap"
          
         >
-          <q-label class="q-px-lg q-py-sm" style="border: 1px solid #219ebc"> # 0.00 </q-label>
-          <q-btn flat v-if="$q.screen.gt.sm" to="/contact"> Add Money </q-btn>
-          <q-btn flat to="/settings">
+          <q-card class="q-px-lg q-py-sm"># 0.00 </q-card>
+          <q-card>
+          <q-btn flat to="/contact"> Add Money </q-btn>
+          </q-card>
+          <q-btn flat v-if="$q.screen.gt.sm" to="/settings">
             <q-avatar size="26px">
               <img src="https://cdn.quasar.dev/img/boy-avatar.png" />
             </q-avatar>
             <label class="q-ml-sm"> {{ fullName }} </label>
             <q-tooltip>Account</q-tooltip>
           </q-btn>
-          <q-btn flat icon="notifications">
+          <q-btn flat  v-if="$q.screen.gt.sm" icon="notifications">
             <q-tooltip>Notifications</q-tooltip>
           </q-btn>
         </div>
@@ -153,6 +155,7 @@
            
           </div>
     </q-drawer>
+    <q-footer class="bg-white text-primary q-px-lg q-py-md">Copyright @ 2023</q-footer>
 
     <q-page-container>
       <router-view />
@@ -188,7 +191,7 @@ const MainLayout = defineComponent({
       // ],
 
       //links3: [{ icon: 'settings', text: 'Settings', link: 'settings' }],
-      buttons1: [{ text: 'Copyright @ 2023' }],
+      //buttons1: [{ text: 'Copyright @ 2023' }],
       //buttons2: [{ text: "Heartszibah Int'l" }],
     };
   },

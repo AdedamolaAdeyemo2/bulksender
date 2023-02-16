@@ -1,23 +1,23 @@
 <template>
   <div style="padding: 20px" class="text-primary">
-    <div style="padding: 0 20px">
+    <div style="padding: 0 20px; border: 1px solid black;">
       <h4><strong>Connect to Whatsapp</strong></h4>
     </div>
-    <div class=" flex row justify-between q-pa-md">
-      <div class="col-xs-12 col-sm-8 col-md-5 bg-white text-black q-pa-lg">
+    <div class=" flex row justify-between q-py-md">
+      <q-card class="col-xs-12 col-sm-8 col-md-5 bg-white text-black q-pa-lg">
         <h6> Scan the qrcode to connect to whatsapp</h6>
         <p>1. Click the menu on your whatsapp.</p>
         <p>2. Select 'Linked devices'.</p>
         <p>3. Click 'Link a device'.</p>
         <p>4. Then scan this qrcode to connect.</p>
-      </div>
-      <div class="col-xs-12 col-sm-8 col-md-5 bg-white q-pa-lg">
+      </q-card>
+      <q-card class="col-xs-12 col-sm-8 col-md-5 bg-white q-pa-md">
         <img
             alt="qrcode"
             src="../assets/qrcode.png"
             
           />
-      </div>
+      </q-card>
       <div class="col-xs-12 col-sm-8 col-md-1"></div>
     </div>
   </div>
