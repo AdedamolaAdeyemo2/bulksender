@@ -11,10 +11,15 @@ const routes = [ // RouteRecordRaw[]
       { path: 'campaigns', component: () => import('pages/CampaignsPage.vue') },
       { path: 'new-campaign', component: () => import('pages/NewcampaignPage.vue') },
       { path: 'contacts', component: () => import('pages/ContactsPage.vue') },
-      { path: 'new-contact', component: () => import('pages/NewcontactPage.vue') },
-      { path: 'connect-whatsapp', component: () => import('pages/ConnectwhatsappPage.vue') },
-      { path: 'settings', component: () => import('pages/SettingsPage.vue') },,
-      ],
+      { path: 'new-contact', component: () => import('pages/NewcontactsPage.vue') },
+      { path: 'connect-whatsapp', component: () => import('pages/ConnectWhatsappPage.vue') },
+      { path: 'settings', component: () => import('pages/SettingsPage.vue') },
+
+      // {
+      //   name: 'subscribe', path: 'subscribe', props: true, component: () => import('pages/PaymentPage.vue'),
+      // },
+      //{ path: 'withdraw-to-bank', component: () => import('pages/BankWithdrawal.vue') },
+    ],
   },
   // auth/login
   // {
@@ -34,10 +39,10 @@ const routes = [ // RouteRecordRaw[]
   // },
   // { path: '/about', component: () => import('pages/AboutPage.vue') },
   // { path: '/contact', component: () => import('pages/ContactPage.vue') },
-  // // Always leave this as last one,
-  // // but you can also remove it
+  // Always leave this as last one,
+  // but you can also remove it
   {
-  path: '/:catchAll(.*)*',
+    path: '/:catchAll(.*)*',
     component: () => import('pages/ErrorNotFound.vue'),
   },
 ];
