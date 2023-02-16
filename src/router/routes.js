@@ -11,7 +11,7 @@ const routes = [ // RouteRecordRaw[]
       { path: 'campaigns', component: () => import('pages/CampaignsPage.vue') },
       { path: 'new-campaign', component: () => import('pages/NewcampaignPage.vue') },
       { path: 'contacts', component: () => import('pages/ContactsPage.vue') },
-      { path: 'new-contact', component: () => import('pages/NewcontactsPage.vue') },
+      { path: 'new-contact', component: () => import('pages/NewcontactPage.vue') },
       { path: 'connect-whatsapp', component: () => import('pages/ConnectWhatsappPage.vue') },
       { path: 'settings', component: () => import('pages/SettingsPage.vue') },
 
