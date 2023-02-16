@@ -5,20 +5,20 @@
     </div>
     <div class="q-pa-md">
       <q-form @submit.prevent="updateProfile" class="q-gutter-md">
-        <div class="flex">
-          <label style="width: 20%">Business Logo </label>
-          <div class="flex" style="width: 60%">
+        <div class="flex row">
+          <label class="col-xs-12 col-sm-8 col-md-2">Business Logo </label>
+          <div class="flex col-xs-12 col-sm-8 col-md-8" style="width: 60%">
             <q-icon name="upload_file" size="50px" />
             <q-file v-model="file" label="Upload Image" filled />
           </div>
         </div>
 
-        <div class="flex">
-          <label style="width: 20%">Business Name: </label>
+        <div class="flex row">
+          <label class="col-xs-12 col-sm-8 col-md-2">Business Name: </label>
           <q-input
+          class="col-xs-12 col-sm-8 col-md-8"
             filled
             v-model="form.firstName"
-            style="width: 60%"
             lazy-rules
             :rules="[
               (val) => (val && val.length > 0) || 'Please type something',
@@ -27,20 +27,20 @@
         </div>
         
         
-        <div class="flex">
-          <label style="width: 20%">Email Address: </label>
+        <div class="flex row">
+          <label class="col-xs-12 col-sm-8 col-md-2">Email Address: </label>
           <q-input
-            style="width: 60%"
+            class="col-xs-12 col-sm-8 col-md-8"
             filled
             type="email"
             v-model="form.email"
             lazy-rules
           />
         </div>
-        <div class="flex">
-          <label style="width: 20%">Phone Number: </label>
+        <div class="flex row">
+          <label class="col-xs-12 col-sm-8 col-md-2">Phone Number: </label>
           <q-input
-            style="width: 60%"
+            class="col-xs-12 col-sm-8 col-md-8"
             filled
             type="text"
             v-model="form.phone"
@@ -49,13 +49,13 @@
           />
         </div>
 
-        <div class="flex">
-          <label style="width: 20%">Password: </label>
+        <div class="flex row">
+          <label class="col-xs-12 col-sm-8 col-md-2">Password: </label>
           <q-input
             filled
             type="password"
             v-model="form.bank_account_number"
-            style="width: 60%"
+            class="col-xs-12 col-sm-8 col-md-8"
             lazy-rules
             :rules="requriedRules"
           />
@@ -64,12 +64,12 @@
 
         <div class="flex justify-center q-mt-lg">
           <q-btn
-            style="width: 20%"
+        
             label="Update"
             size="lg"
             type="submit"
             :loading="isLoading"
-            class="bg-primary text-white"
+            class="col-xs-12 col-sm-8 col-md-3 bg-primary text-white"
           />
         </div>
       </q-form>
