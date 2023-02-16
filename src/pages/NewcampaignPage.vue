@@ -8,25 +8,24 @@
         <div>
          <label>Recipients: </label>
 
-        <div class="flex q-gutter-md">
+        <div class="flex row q-gutter-md">
          
-          <q-input class="col-xs-12 col-sm-8"
+          <q-input class="col-xs-12 col-sm-8 col-md-5 col-md-8"
             filled
-            style="width: 60%"
             lazy-rules
             :rules="[
               (val) => (val && val.length > 0) || 'Please type something',
             ]"
           />
+          <q-label class="q-pt-md"> OR </q-label>
           <q-btn class="col-xs-12 col-sm-8 col-md-3 h-5" style="height:55px"> Send To All Contacts </q-btn>
         </div>
         </div>
-        <div>
+        <div class="q-pt-lg">
           <label>Subject: </label>
-          <q-input
+          <q-input class="col-xs-12 col-sm-8 col-md-8"
             filled
            
-            style="width: 60%"
             lazy-rules
             :rules="[
               (val) => (val && val.length > 0) || 'Please type something',
@@ -37,30 +36,30 @@
         <div>
           <label>Body: </label>
           <q-input
-            style="width: 60%"
+            class="col-xs-12 col-sm-8 col-md-8"
             filled
-            type="text"
+            type="textarea"
           
             lazy-rules
           />
         </div>
         
-        <div class="flex q-mt-lg" style="width:80%">
+        <div class="flex row q-mt-lg q-gutter-y-md" style="width:80%">
           <q-btn
-            style="width: 20%"
+            
             label="Send Now"
             size="lg"
             type="submit"
             :loading="isLoading"
-            class="bg-primary text-white q-mr-lg"
+            class="col-xs-12 col-sm-8 col-md-3 bg-primary text-white q-mr-lg"
           />
           <q-btn
-            style="width: 20%"
+            
             label="Send Later"
             size="lg"
             type="submit"
             :loading="isLoading"
-            class="bg-primary text-white"
+            class="col-xs-12 col-sm-8 col-md-3 bg-primary text-white"
           />
         </div>
       </q-form>

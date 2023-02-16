@@ -8,11 +8,11 @@
         <div>
          <label>First Name: </label>
 
-        <div class="flex q-gutter-md">
+        <div class="flex row">
          
-          <q-input class="col-xs-12 col-sm-8"
+          <q-input class="col-xs-12 col-sm-8 col-md-8"
             filled
-            style="width: 60%"
+            
             lazy-rules
             :rules="[
               (val) => (val && val.length > 0) || 'Please type something',
@@ -21,29 +21,29 @@
         
         </div>
         </div>
-        <div>
+        <div >
           <label>Whatsapp Number: </label>
-          <q-input
+          <div class="flex row">
+          <q-input class="col-xs-12 col-sm-8 col-md-8"
             filled
-           
-            style="width: 60%"
             lazy-rules
             :rules="[
               (val) => (val && val.length > 0) || 'Please type something',
             ]"
           />
+        </div>
         </div>
 
         
         
         <div class="q-mt-lg">
           <q-btn
-            style="width: 20%"
+            
             label="Add Contact"
             size="lg"
             type="submit"
             :loading="isLoading"
-            class="bg-primary text-white"
+            class="col-xs-12 col-sm-8 col-md-3 bg-primary text-white"
           />
           
         </div>
