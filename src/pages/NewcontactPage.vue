@@ -4,6 +4,15 @@
       <h4><strong>Add New Contact</strong></h4>
     </div>
     <div class="q-pa-md">
+      
+        <div class="flex q-pb-lg">
+        <q-icon name="upload_file" size="50px" />
+        <q-file v-model="file" label="Upload CSV" filled />
+        <q-label class="q-pa-lg">Or add manually below </q-label>
+        </div>
+      
+      
+      
       <q-form class="q-gutter-md">
         <div>
          <label>First Name: </label>

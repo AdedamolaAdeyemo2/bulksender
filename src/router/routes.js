@@ -1,7 +1,9 @@
 //import { RouteRecordRaw } from 'vue-router';
 
 const routes = [ // RouteRecordRaw[]
+  
   {
+    mode: 'history',
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     meta: { requiresAuth: true },
